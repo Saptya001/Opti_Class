@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Custom Global Styles ===== */
+body {
+  @apply bg-gray-50 text-gray-800 font-sans;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.6); /* slate-500 */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Utility classes */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* Smooth transition for interactive elements */
+button, a {
+  @apply transition duration-200 ease-in-out;
+}
