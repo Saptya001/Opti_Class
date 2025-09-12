@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "tailwind": "^4.0.0"
-=======
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
@@ -10,6 +6,5 @@
   },
   "dependencies": {
     "tailwind": "^2.3.1"
->>>>>>> 35c0da0c0c05489e648a6be93f0ea24cd4468b8d
   }
 }
