@@ -65,7 +65,7 @@ const Login = () => {
             onChange={handleChange}
             required
             className="mt-1 w-full px-3 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500"
-            placeholder="********"
+            placeholder=""
           />
         </div>
 
