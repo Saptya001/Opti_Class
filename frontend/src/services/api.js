@@ -1,22 +1,5 @@
 import axios from "axios";
 
-<<<<<<< HEAD
-const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
-  withCredentials: true,
-});
-
-// Add token to every request if available
-api.interceptors.request.use((config) => {
-  const token = localStorage.getItem("token");
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  return config;
-});
-
-export default api;
-=======
 const API = axios.create({
   baseURL: "http://localhost:5000/api", // 🔹 Change this to your backend URL
   headers: {
@@ -124,4 +107,3 @@ export const addTimetableEntry = async (entry) => {
 };
 
 export default API;
->>>>>>> 35c0da0c0c05489e648a6be93f0ea24cd4468b8d

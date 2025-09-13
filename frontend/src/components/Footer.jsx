@@ -1,13 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-
-const Footer = () => {
-  return (
-    <footer className="bg-gray-800 text-white text-center py-3 mt-auto">
-      <p className="text-sm">
-        © {new Date().getFullYear()} OptiClass Scheduler — All Rights Reserved
-      </p>
-=======
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -70,7 +61,6 @@ const Footer = () => {
           © {new Date().getFullYear()} Opti Class. All rights reserved.
         </div>
       </div>
->>>>>>> 35c0da0c0c05489e648a6be93f0ea24cd4468b8d
     </footer>
   );
 };

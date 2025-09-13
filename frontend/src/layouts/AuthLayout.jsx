@@ -1,13 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-import { Outlet } from "react-router-dom";
-
-const AuthLayout = () => {
-  return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
-      <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md">
-        <Outlet /> {/* renders Login or Register page */}
-=======
 
 const AuthLayout = ({ children }) => {
   return (
@@ -20,7 +11,6 @@ const AuthLayout = ({ children }) => {
 
         {/* Auth Page Content */}
         {children}
->>>>>>> 35c0da0c0c05489e648a6be93f0ea24cd4468b8d
       </div>
     </div>
   );

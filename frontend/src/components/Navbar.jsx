@@ -3,17 +3,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-<<<<<<< HEAD
-    <nav className="bg-blue-600 text-white px-6 py-3 flex justify-between items-center shadow-md">
-      {/* Logo */}
-      <h1 className="font-bold text-xl">OptiClass Scheduler</h1>
-
-      {/* Navigation Links */}
-      <div className="space-x-6">
-        <Link to="/" className="hover:text-gray-200">Dashboard</Link>
-        <Link to="/timetable" className="hover:text-gray-200">Timetable</Link>
-        <Link to="/admin" className="hover:text-gray-200">Admin</Link>
-=======
     <nav className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
@@ -60,7 +49,6 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
->>>>>>> 35c0da0c0c05489e648a6be93f0ea24cd4468b8d
       </div>
     </nav>
   );
