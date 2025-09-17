@@ -7,30 +7,24 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'), // optional, allows @/ to reference src/
+      '@': path.resolve(__dirname, './src'), // Use @ to reference src folder
     },
   },
   server: {
-    port: 5173, // dev server port
-    open: true, // opens browser automatically
-    strictPort: true, // fails if port is busy
+    port: 5173,           // Default Vite port
+    open: true,           // Open browser on `npm run dev`
+    strictPort: true,     // Exit if port is already in use
+    cors: true,
   },
   build: {
-    outDir: 'dist',
-    sourcemap: true, // optional: generate source maps
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            return id.toString().split('node_modules/')[1].split('/')[0].toString();
-          }
-        },
-      },
-    },
+    outDir: 'dist',       // Build output folder
+    sourcemap: true,      // Include source maps for debugging
   },
   css: {
-    postcss: {
-      plugins: [],
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/styles/global.scss";`, // Optional: global SCSS
+      },
     },
   },
 });
